@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cadastro de Cinema</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script src="../../src/script.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Cadastro de Cinema</a></h1>
+		<form id="form_112603" class="appnitro" action="">
+					<div class="form_description">
+			<h2>Cadastro de Cinema</h2>
+			<p>Coloque as informações do cinema a ser cadastrado</p>
+		</div>						
+			<ul >
+			
+					<li id="li_3" >
+		<label class="description" for="element_3">Nome do Cinema<font color="red">*</font></label>
+		<div>
+			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" placeholder="Cinépolis" required/> 
+		</div>
+		<li id="li_3" >
+			<label class="description" for="element_3">Localidade do Cinema<font color="red">*</font></label>
+			<div>
+				<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" placeholder="Shopping Bandeiras" required/> 
+			</div>
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">ID do Gerente<font color="red">*</font></label>
+		<div>
+			<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" placeholder="655" required/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Telefone para Contato</label>
+		<span>
+			<input id="element_2_1" name="element_2_1" class="element text" size="2" maxlength="2" placeholder="11" type="text"> -
+		</span>
+		<span>
+			<input id="element_2_2" name="element_2_2" class="element text" size="9" maxlength="9" placeholder="99999-9999" type="text">
+
+		</span>
+		 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Email<font color="red">*</font></label>
+		<div>
+			<input id="element_5" name="element_5" class="element text medium" type="email" maxlength="30" placeholder="example@example.com.br" required/> 
+		</div> 
+		</li>
+			
+					<li class="buttons">
+			    
+				<button onclick="CloseFormCine()">Enviar</button>
+		</li>
+			</ul>
+
+		<p>*Se o gerente não estiver cadastrado, cadastre-o primeiro antes de enviar esse requisito.</p>
+		<p>**Uma vez enviado esse requisito, não é possível alterá-lo.</p>
+		<a href="../cinema.html">Voltar ao Dashboard</a>
+		</form>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>

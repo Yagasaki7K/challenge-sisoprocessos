@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="shortcut icon" href="../assets/logo.png">
+</head>
+<body>
+      <div id="navi">
+          <a href="../index.html"><img src="../assets/logo.png" id="logo"></a>
+          <hr>
+          <a href="dashboard.html">DASHBOARD</a>
+          <hr>
+          <a href="cinema.html">CINEMAS</a>
+          <hr>
+          <a href="forms.html">FORMULÁRIOS</a>
+          <hr>
+          <a href="relatorios.html">RELATÓRIO</a>
+          <hr>
+          <a href="actionplan.html">PLANO DE AÇÃO</a>
+          <hr>
+          <a href="cadastro.html">GERÊNCIA</a>
+          <hr>
+          &nbsp;
+          <hr>
+          <a href="../index.html">LOGOFF</a>
+          <hr>
+      </div>
+      <div id="dashboard">
+          <h1>Cadastro e Registro de Gerentes</h1>
+          <button onclick="location.reload()">Atualizar Dados</button>
+          <button onclick="window.location.href='./form-gerente/form.html'">Cadastrar Gerentes</button><br><br>
+
+          <script> document.write(Date());</script><br>
+          
+              <table class="tg" id="tbl-mng">
+              <colgroup>
+              <col style="width: 143px">
+              <col style="width: 197px">
+              <col style="width: 210px">
+              <col style="width: 143px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="tg-amwm">CINEMA</th>
+                  <th class="tg-amwm">RESPONSÁVEL</th>
+                  <th class="tg-amwm">LOCALIDADE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-baqh">Cinemark</td>
+                  <td class="tg-baqh">Rafael Augusto (ID: 715)</td>
+                  <td class="tg-baqh">Dom Pedro Shopping</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinépolis</td>
+                  <td class="tg-baqh">Carlos Andrade (ID: 515)</td>
+                  <td class="tg-baqh">Campinas Shopping</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinemark</td>
+                  <td class="tg-baqh">Marcos Alves (ID: 016)</td>
+                  <td class="tg-baqh">Iguatemi Campinas</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cine Sumaré</td>
+                  <td class="tg-baqh">Diego Henrique (ID: 157)</td>
+                  <td class="tg-baqh">Sumaré</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Top Cineplex</td>
+                  <td class="tg-baqh">Marcelo Vinicius (ID: 445)</td>
+                  <td class="tg-baqh">Shopping Prado</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinemax</td>
+                  <td class="tg-baqh">Henrique Eduardo (ID: 332)</td>
+                  <td class="tg-baqh">Shopping Galeria</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Santa Cine</td>
+                  <td class="tg-baqh">Jéssica da Silva (ID: 225)</td>
+                  <td class="tg-baqh">Santa Fé do Sul</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cineplex</td>
+                  <td class="tg-baqh">Carlos Eduardo (ID: 725)</td>
+                  <td class="tg-baqh">Shopping Unimart</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinemark</td>
+                  <td class="tg-baqh">Felipe Gonçalves (ID: 679)</td>
+                  <td class="tg-baqh">UniShopping</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinépolis</td>
+                  <td class="tg-baqh">Gabriel Toledo (ID: 777)</td>
+                  <td class="tg-baqh">Shopping Primavera</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinemaria</td>
+                  <td class="tg-baqh">Dennis Gusmão (ID: 656)</td>
+                  <td class="tg-baqh">Shopping das Flores</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinemark</td>
+                  <td class="tg-baqh">Rafael Augusto (ID: 715)</td>
+                  <td class="tg-baqh">Dom Pedro Shopping</td>
+                </tr>
+                <tr>
+                  <td class="tg-baqh">Cinépolis</td>
+                  <td class="tg-baqh">Carlos Andrade (ID: 515)</td>
+                  <td class="tg-baqh">Campinas Shopping</td>
+                </tr>
+              </tbody>
+              </table>
+      </div>
+</body>
+
+<script src="../src/script.js"></script>
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "1669710269923880", // Facebook page ID
+            whatsapp: "19994422875", // WhatsApp number
+            call_to_action: "Envie uma mensagem", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+</html>

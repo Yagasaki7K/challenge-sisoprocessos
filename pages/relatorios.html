@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="shortcut icon" href="../assets/logo.png">
+</head>
+<body>
+    <div id="navi">
+        <a href="../index.html"><img src="../assets/logo.png" id="logo"></a>
+        <hr>
+        <a href="dashboard.html">DASHBOARD</a>
+        <hr>
+        <a href="cinema.html">CINEMAS</a>
+        <hr>
+        <a href="forms.html">FORMULÁRIOS</a>
+        <hr>
+        <a href="relatorios.html">RELATÓRIO</a>
+        <hr>
+        <a href="actionplan.html">PLANO DE AÇÃO</a>
+        <hr>
+        <a href="cadastro.html">GERÊNCIA</a>
+        <hr>
+        &nbsp;
+        <hr>
+        <a href="../index.html">LOGOFF</a>
+        <hr>
+    </div>
+    <div id="dashboard">
+        <h1>Cadastro e Registro de Relatórios</h1>
+        <button onclick="JSUpload()">Cadastrar</button>
+        <button onclick="JSExports()">Exportar</button><br><br>
+        
+        <script>document.write(Date());</script><br>
+
+        <div id="btnUpload"><input type="file" accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+        <input type="submit" value="Enviar"></div>
+
+        <table class="tg" id="tbl-rel">
+        <colgroup>
+        <col style="width: 197px">
+        <col style="width: 197px">
+        <col style="width: 210px">
+        <col style="width: 143px">
+            </colgroup>
+        <thead>
+            <tr>
+                <th class="tg-amwm">ID DO RELATÓRIO</th>
+                <th class="tg-amwm">GERENTE</th>
+                <th class="tg-amwm">LOCALIDADE</th>
+                <th class="tg-amwm">AUTORIZADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-baqh">01</td>
+                <td class="tg-baqh">Rafael Augusto (ID: 715)</td>
+                <td class="tg-baqh">Dom Pedro Shopping</td>
+                <td class="tg-baqh">✔️</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">02</td>
+                <td class="tg-baqh">Carlos Andrade (ID: 515)</td>
+                <td class="tg-baqh">Campinas Shopping</td>
+                <td class="tg-baqh">✔️</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">03</td>
+                <td class="tg-baqh">Marcos Alves (ID: 016)</td>
+                <td class="tg-baqh">Iguatemi Campinas</td>
+                <td class="tg-baqh">✔️</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">04</td>
+                <td class="tg-baqh">Diego Henrique (ID: 157)</td>
+                <td class="tg-baqh">Sumaré</td>
+                <td class="tg-baqh">❌</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">05</td>
+                <td class="tg-baqh">Marcelo Vinicius (ID: 445)</td>
+                <td class="tg-baqh">Shopping Prado</td>
+                <td class="tg-baqh">✔️</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">06</td>
+                <td class="tg-baqh">Henrique Eduardo (ID: 332)</td>
+                <td class="tg-baqh">Shopping Galeria</td>
+                <td class="tg-baqh">❌</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">07</td>
+                <td class="tg-baqh">Jéssica da Silva (ID: 225)</td>
+                <td class="tg-baqh">Santa Fé do Sul</td>
+                <td class="tg-baqh">❌</td>
+            </tr>
+                <tr>
+                <td class="tg-baqh">08</td>
+                <td class="tg-baqh">Carlos Eduardo (ID: 725)</td>
+                <td class="tg-baqh">Shopping Unimart</td>
+                <td class="tg-baqh">❌</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">09</td>
+                <td class="tg-baqh">Felipe Gonçalves (ID: 679)</td>
+                <td class="tg-baqh">UniShopping</td>
+                <td class="tg-baqh">❌</td>
+            </tr>
+            <tr>
+                <td class="tg-baqh">10</td>
+                <td class="tg-baqh">Gabriel Toledo (ID: 777)</td>
+                <td class="tg-baqh">Shopping Primavera</td>
+                <td class="tg-baqh">✔️</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    
+</body>
+
+<script src="../src/script.js"></script>
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "1669710269923880", // Facebook page ID
+            whatsapp: "19994422875", // WhatsApp number
+            call_to_action: "Envie uma mensagem", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+</html>

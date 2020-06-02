@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="shortcut icon" href="../assets/logo.png">
+</head>
+<body>
+    <div id="navi">
+        <a href="../index.html"><img src="../assets/logo.png" id="logo"></a>
+        <hr>
+        <a href="dashboard.html">DASHBOARD</a>
+        <hr>
+        <a href="cinema.html">CINEMAS</a>
+        <hr>
+        <a href="forms.html">FORMULÁRIOS</a>
+        <hr>
+        <a href="relatorios.html">RELATÓRIO</a>
+        <hr>
+        <a href="actionplan.html">PLANO DE AÇÃO</a>
+        <hr>
+        <a href="cadastro.html">GERÊNCIA</a>
+        <hr>
+        &nbsp;
+        <hr>
+        <a href="../index.html">LOGOFF</a>
+        <hr>
+    </div>
+    <div id="dashboard">
+        <h1>Plano de Ação</h1>
+            <button onclick="JSUpload()">Cadastrar</button><br><br>
+            <script>document.write(Date());</script><br>
+
+            <div id="btnUpload"><input type="file" accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            <input type="submit" value="Enviar"></div>
+
+            <table class="tg" id="tbl-PDA">
+            <colgroup>
+            <col style="width: 150px">
+            <col style="width: 150px">
+            <col style="width: 180px">
+            <col style="width: 210px">
+                </colgroup>
+            <thead>
+                <tr>
+                    <th class="tg-amwm">RESPONSÁVEL</th>
+                    <th class="tg-amwm">LOCALIZAÇÃO</th>
+                    <th class="tg-amwm">CAUSA</th>
+                    <th class="tg-amwm">AÇÃO CORRETIVA</th>
+                    <th class="tg-amwm">STATUS</th>
+                    <th class="tg-amwm">FINALIZADO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-baqh">ID: 715</td>
+                    <td class="tg-baqh">Cozinha</td>
+                    <td class="tg-baqh">Vazamento de Gás</td>
+                    <td class="tg-baqh">Chamada Técnica</td>
+                    <td class="tg-baqh">🔴</td>
+                    <td class="tg-baqh">❌</td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh">ID: 016</td>
+                    <td class="tg-baqh">Balcão</td>
+                    <td class="tg-baqh">Luz Queimada</td>
+                    <td class="tg-baqh">Reposição de Material</td>
+                    <td class="tg-baqh">🔴</td>
+                    <td class="tg-baqh">❌</td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh">ID: 679</td>
+                    <td class="tg-baqh">Almoxarifado</td>
+                    <td class="tg-baqh">Falta de Produto</td>
+                    <td class="tg-baqh">Reposição de Material</td>
+                    <td class="tg-baqh">🟢</td>
+                    <td class="tg-baqh">❌</td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh">ID: 445</td>
+                    <td class="tg-baqh">Administração</td>
+                    <td class="tg-baqh">Manutenção Exporádica</td>
+                    <td class="tg-baqh">Técnico de Informática</td>
+                    <td class="tg-baqh">🟡</td>
+                    <td class="tg-baqh">✔️</td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh">ID: 225</td>
+                    <td class="tg-baqh">Cozinha</td>
+                    <td class="tg-baqh">Limpeza</td>
+                    <td class="tg-baqh">Equipe de Terceiros</td>
+                    <td class="tg-baqh">🔴</td>
+                    <td class="tg-baqh">✔️</td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh">ID: 656</td>
+                    <td class="tg-baqh">Hall de Entrada</td>
+                    <td class="tg-baqh">Troca de Cartazes</td>
+                    <td class="tg-baqh">Substituição</td>
+                    <td class="tg-baqh">🟢</td>
+                    <td class="tg-baqh">✔️</td>
+                </tr>
+                <tr>
+                    <td class="tg-baqh">ID: 445</td>
+                    <td class="tg-baqh">Balcão</td>
+                    <td class="tg-baqh">Manutenção</td>
+                    <td class="tg-baqh">Equipe de Construção</td>
+                    <td class="tg-baqh">🟡</td>
+                    <td class="tg-baqh">✔️</td>
+                </tr>
+                
+            </tbody>
+            </table>
+        </div>
+    
+</body>
+
+<script src="../src/script.js"></script>
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "1669710269923880", // Facebook page ID
+            whatsapp: "19994422875", // WhatsApp number
+            call_to_action: "Envie uma mensagem", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+</html>
